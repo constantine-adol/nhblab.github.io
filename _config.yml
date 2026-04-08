@@ -1,6 +1,7 @@
 title: NHB Lab
-baseurl: ""
-url: "https://nhblab.github.io"
+baseurl: "/nhblab.github.io"
+url: "https://constantine-adol.github.io"
+
 
 collections:
   publications:
