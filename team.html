@@ -11,7 +11,7 @@ title: Team
       {% for member in site.data.team %}
         {% if member.group == "Advisor" %}
           <div class="team-member">
-            <img src="{{ member.photo }}" alt="{{ member.name }}">
+            <img src="{{ member.photo | relative_url }}" alt="{{ member.name }}">
             <h4>{{ member.name }}</h4>
             <p class="role">{{ member.role }}</p>
             <p class="bio">{{ member.bio }}</p>
@@ -26,7 +26,7 @@ title: Team
       {% for member in site.data.team %}
         {% if member.group == "PhD Students" %}
           <div class="team-member">
-            <img src="{{ member.photo }}" alt="{{ member.name }}">
+            <img src="{{ member.photo | relative_url }}" alt="{{ member.name }}">
             <h4>{{ member.name }}</h4>
             <p class="role">{{ member.role }}</p>
             <p class="bio">{{ member.bio }}</p>
