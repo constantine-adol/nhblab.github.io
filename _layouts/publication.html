@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="container">
+  <h1 style="margin-top: 20px;">{{ page.title }}</h1>
+
+  <p><strong>Authors:</strong> {{ page.authors }}</p>
+  {% if page.journal %}<p><strong>Journal:</strong> {{ page.journal }}</p>{% endif %}
+  {% if page.year %}<p><strong>Year:</strong> {{ page.year }}</p>{% endif %}
+
+  {% if page.abstract %}
+  <div class="pub-abstract" style="margin-top: 20px;">
+    <h3>Abstract</h3>
+    <p>{{ page.abstract }}</p>
+  </div>
+  {% endif %}
+
+  {% if page.pdf %}
+  <p><a href="{{ page.pdf | relative_url }}" target="_blank">📄 View PDF</a></p>
+  {% endif %}
+
+  <p style="margin-top: 30px;"><a href="{{ '/publications' | relative_url }}">&larr; Back to Publications</a></p>
+</div>
+

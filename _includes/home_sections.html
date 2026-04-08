@@ -1,0 +1,56 @@
+{% comment %} Home sections injected, preserving theme {% endcomment %}
+<link rel="stylesheet" href="{{ '/assets/css/home-v2.css' | relative_url }}">
+<section class="nhb-who-we-are">
+  <div class="nhb-wrap">
+    <div class="nhb-head">
+      <h2>Who are we?</h2>
+      <p>We explore the interface of biomaterials and medicine using chemistry, materials science and engineering.</p>
+    </div>
+    <div class="nhb-grid">
+      <article class="nhb-card"><div class="nhb-icon beaker"></div><div class="nhb-card-body"><h3>Translational Biomaterials</h3><p>From lipid nanoparticles (LNPs) to membrane-hybrid nanovaccines, engineered for delivery and safety.</p></div></article>
+      <article class="nhb-card"><div class="nhb-icon dna"></div><div class="nhb-card-body"><h3>RNA &amp; Protein Therapeutics</h3><p>mRNA, siRNA, and logic-gated constructs paired with rational delivery for targeted expression.</p></div></article>
+      <article class="nhb-card"><div class="nhb-icon chip"></div><div class="nhb-card-body"><h3>Scalable Manufacturing</h3><p>Hollow-fiber–based continuous production with tunable mixing, size control, and high throughput.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="nhb-focus">
+  <div class="nhb-wrap">
+    <div class="nhb-head">
+      <h2>Our Focus</h2>
+      <p>We develop multifunctional biomaterials for medical applications and study structure–function relationships.</p>
+    </div>
+    <div class="nhb-grid">
+      <article class="nhb-card"><div class="nhb-icon pill"></div><div class="nhb-card-body"><h3>Therapeutic Delivery</h3><p>LNPs and vesicles optimized for biodistribution, stability, and endosomal escape.</p></div></article>
+      <article class="nhb-card"><div class="nhb-icon gel"></div><div class="nhb-card-body"><h3>Hydrogels &amp; Scaffolds</h3><p>Injectable gels and bioactive matrices enabling regeneration and controlled release.</p></div></article>
+      <article class="nhb-card"><div class="nhb-icon microscope"></div><div class="nhb-card-body"><h3>Structure–Function</h3><p>Correlating composition, assembly, and microstructure with in vitro/in vivo performance.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="nhb-latest-news" id="home-news">
+  <div class="nhb-wrap">
+    <div class="nhb-head"><h2>Latest News</h2></div>
+    <ul class="nhb-news-list">
+      {% assign latest_news = site.news | sort: 'date' | reverse | slice: 0, 3 %}
+      {% for item in latest_news %}
+        <li class="nhb-news-item">
+          <span class="nhb-news-date">{{ item.date | date: "%Y-%m-%d" }}</span>
+          <span class="nhb-news-title">{{ item.title }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="nhb-news-cta"><a class="nhb-btn" href="{{ '/news' | relative_url }}">View all news</a></div>
+  </div>
+</section>
+
+
+<section class="nhb-quick-links">
+  <div class="nhb-wrap nhb-ql-grid">
+    <a class="nhb-ql-card" href="{{ '/research' | relative_url }}"><div class="nhb-icon grid"></div><span>Research</span></a>
+    <a class="nhb-ql-card" href="{{ '/publications' | relative_url }}"><div class="nhb-icon paper"></div><span>Publications</span></a>
+    <a class="nhb-ql-card" href="/team"><div class="nhb-icon users"></div><span>People</span></a>
+    <a class="nhb-ql-card" href="/labtour"><div class="nhb-icon tour"></div><span>Lab Tour</span></a>
+    <a class="nhb-ql-card" href="/contact"><div class="nhb-icon mail"></div><span>Contact Us</span></a>
+  </div>
+</section>

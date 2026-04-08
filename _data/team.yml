@@ -1,0 +1,62 @@
+- name: Dr. Xiaoyang Xu
+  group: Advisor
+  role: Professor, Department of Chemical, Biological and Pharmaceutical Engineering
+  bio: Postdoc at MIT/Harvard, PhD Northwestern University.
+  photo: /img/xu.jpg
+  email: xiaoyang@njit.edu
+
+- name: Zhixiang Liu
+  group: PhD Students
+  role: PhD Student
+  bio: B.S. Engineering, China University of Petroleum; M.S. Missouri University of Science and Technology.
+  photo: /img/liu.jpg
+  email: zl37@njit.edu
+
+- name: William Stewart
+  group: PhD Students
+  role: PhD Student
+  bio: B.S. Chemistry, University of Missouri - St. Louis.
+  photo: /img/stewart.jpg
+  email: ws48@njit.edu
+
+- name: Yuang Wu
+  group: PhD Students
+  role: PhD Student
+  bio: B.S. Biology, Northeast Agricultural University & Millersville University; M.S. Biomedical Engineering, Hong Kong Polytechnic University.
+  photo: /img/wu.jpg
+  email: yw87@njit.edu
+
+- name: Yen-jui Chen
+  group: Master’s Students
+  role: Master’s Student
+  bio: Picture coming soon.
+  photo: /img/chen.jpg
+  email: yc594@njit.edu
+
+- name: Siru Li
+  group: Master’s Students
+  role: Master’s Student
+  bio: Picture coming soon.
+  photo: /img/li.jpg
+  email: sl842@njit.edu
+
+- name: William Ho
+  group: Former Members
+  role: Former Member
+  bio: B.Sc. Honors Biology, Minor in Economics, University of Waterloo; MASc Biomedical Engineering, University of Ottawa.
+  photo: /img/ho.jpg
+  email: wh258@njit.edu
+
+- name: Zhongyu Li
+  group: Former Members
+  role: Former Member
+  bio: B.S. Chemistry, Nankai University; M.S. Chemical Engineering, NJIT.
+  photo: /img/zli.jpg
+  email: zl396@njit.edu
+
+- name: Fengqiao Li
+  group: Former Members
+  role: Former Member
+  bio: B.S. Bioengineering, Minor in Law, China Three Gorges University; M.S. Pharmacy, Fuzhou University.
+  photo: /img/fli.jpg
+  email: fl266@njit.edu
