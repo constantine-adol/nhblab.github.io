@@ -22,6 +22,8 @@ jobs:
           bundler-cache: false
 
       - uses: actions/configure-pages@v5
+      
+      - run: bundle install
 
       - run: bundle exec jekyll build
         env:
