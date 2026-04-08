@@ -1,6 +1,6 @@
 title: NHB Lab
 baseurl: ""
-url: ""
+url: "https://nhblab.github.io"
 
 collections:
   publications:
