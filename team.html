@@ -1,0 +1,70 @@
+---
+layout: default
+title: Team
+---
+<section id="team">
+  <div class="container">
+    <h2 class="section-heading text-center">Our Amazing Team</h2>
+
+    <h3>Advisor</h3>
+    <div class="team-grid">
+      {% for member in site.data.team %}
+        {% if member.group == "Advisor" %}
+          <div class="team-member">
+            <img src="{{ member.photo }}" alt="{{ member.name }}">
+            <h4>{{ member.name }}</h4>
+            <p class="role">{{ member.role }}</p>
+            <p class="bio">{{ member.bio }}</p>
+            <a href="mailto:{{ member.email }}"><i class="fas fa-envelope"></i></a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <h3>PhD Students</h3>
+    <div class="team-grid">
+      {% for member in site.data.team %}
+        {% if member.group == "PhD Students" %}
+          <div class="team-member">
+            <img src="{{ member.photo }}" alt="{{ member.name }}">
+            <h4>{{ member.name }}</h4>
+            <p class="role">{{ member.role }}</p>
+            <p class="bio">{{ member.bio }}</p>
+            <a href="mailto:{{ member.email }}"><i class="fas fa-envelope"></i></a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <h3>Master’s Students</h3>
+    <div class="team-grid">
+      {% for member in site.data.team %}
+        {% if member.group == "Master’s Students" %}
+          <div class="team-member">
+            <img src="{{ member.photo }}" alt="{{ member.name }}">
+            <h4>{{ member.name }}</h4>
+            <p class="role">{{ member.role }}</p>
+            <p class="bio">{{ member.bio }}</p>
+            <a href="mailto:{{ member.email }}"><i class="fas fa-envelope"></i></a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <h3>Former Members</h3>
+    <div class="team-grid">
+      {% for member in site.data.team %}
+        {% if member.group == "Former Members" %}
+          <div class="team-member">
+            <img src="{{ member.photo }}" alt="{{ member.name }}">
+            <h4>{{ member.name }}</h4>
+            <p class="role">{{ member.role }}</p>
+            <p class="bio">{{ member.bio }}</p>
+            <a href="mailto:{{ member.email }}"><i class="fas fa-envelope"></i></a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+  </div>
+</section>

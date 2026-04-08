@@ -1,0 +1,30 @@
+---
+layout: default
+title: Publications
+---
+
+<section class="publications">
+  <div class="container">
+    <h2>PUBLICATIONS</h2>
+    <h2>{{ site.publications | size }} publications found</h2>
+
+    {% assign pubs = site.publications | sort: 'year' | reverse %}
+    {% assign pubs_by_year = pubs | group_by: "year" %}
+    {% for group in pubs_by_year %}
+      <h2 id="y{{ group.name }}">{{ group.name }}</h2>
+      {% assign sorted_items = group.items | sort: "id" | reverse %}
+      <ul>
+        {% for p in sorted_items %}
+          <li style="margin:10px 0;">
+            <div class="pub-title">
+              <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+            </div>
+            <div class="pub-meta" style="color:#555;">
+              <em>{{ p.authors }}</em>{% if p.journal %}, <strong><em>{{ p.journal }}</em></strong>{% endif %}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,18 @@
+---
+layout: default
+title: News
+---
+
+<section class="news">
+  <div class="container">
+    <h1>NEWS</h1>
+    {% assign sorted_news = site.news | sort: 'date' | reverse %}
+    <ul>
+      {% for n in sorted_news %}
+        <li style="margin-bottom: 15px;">
+          <strong>{{ n.date | date: "%Y-%m-%d" }}</strong> — {{ n.title }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

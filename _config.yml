@@ -1,0 +1,11 @@
+title: NHB Lab
+baseurl: ""
+url: ""
+
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
+  news:
+    output: true
+    permalink: /news/:title/
